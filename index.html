@@ -21,7 +21,7 @@
    <header class="header">
      <div class="container header-container">
       <nav class="header-nav">
-         <a class="logo-header header-logo" href="./index.html">
+         <a class="logo header-logo" href="./index.html">
             Web<span class="logo_style">Studio</span>
          </a>
          <ul class="header-nav-list">
@@ -46,6 +46,77 @@
             </li>
          </ul>
       </address>
+      <button  class="btn-burger" type="button">
+         <svg class="icon-burger" width="24" height="24">
+            <use href="./images/icons.svg#icon-btn-burger"></use>
+         </svg> 
+      </button>
+
+      <div class="mobile-menu">
+         <div class="container mobile-menu-container">
+            <button class="mobile-menu-close">
+               <svg class="close-btn-icon" width="8" height="8">
+                  <use href="./images/icons.svg#icon-btn-close"></use>
+               </svg>
+            </button>
+            <ul class="mobile-menu-nav-list">
+               <li class="mobile-menu-nav-iten">
+                  <a class="mobile-menu-nav-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-nav-iten">
+               <a class="mobile-menu-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-nav-iten">
+               <a class="mobile-menu-nav-link" href="">Contacts</a>
+            </li>
+         </ul>
+
+         <address class="mobile-menu-address">
+            <ul class="mobile-menu-address-list">
+               <li class="mobile-menu-addres-item">
+                  <a class="mobile-menu-address-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+               </li>
+               <li class="mobile-menu-addres-item">
+                  <a class="mobile-menu-address-item-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+               </li>
+            </ul>
+               </address>
+
+               <ul class="mobile-menu-social-list">
+                  <li class="mobile-menu-social-item">
+                     <a href="" class="mobile-menu-social-link">
+                        <svg class="mobile-menu-social-icon" width="16" height="16">
+                           <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="mobile-menu-social-item">
+                     <a href="" class="mobile-menu-social-link">
+                        <svg class="mobile-menu-social-icon" width="16" height="16">
+                           <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="mobile-menu-social-item">
+                     <a href="" class="mobile-menu-social-link">
+                        <svg class="mobile-menu-social-icon" width="16" height="16">
+                           <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="mobile-menu-social-item">
+                     <a href="" class="mobile-menu-social-link">
+                        <svg class="mobile-menu-social-icon" width="16" height="16">
+                           <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+
+         </div>
+      </div>
+
+
      </div>
    </header>
  <!-- #endregion header -->
@@ -120,7 +191,19 @@
          <h2 class="team-title">Our Team</h2>
          <ul class="team-list">
             <li class="team-list-title">
-               <img src="./images/team/mark_guerrero.jpg" alt="Mark Guerrero" width="264" />
+               <picture>
+                  <!-- Мобільна версія -->
+                  <source media="(max-width: 767px)"
+                     srcset="./images/team/team-mobile.jpg 1x, ./images/team/team-mobile-2x.jpg 2x">
+                  <!-- Планшет -->
+                  <source media="(min-width: 768px) and (max-width: 1024px)"
+                     srcset="./images/team/mark_guerrero-1x-tablet.jpg 1x, ./images/team/mark_guerrero-2x-tablet.jpg 2x">
+                  <!-- Десктоп -->
+                  <source media="(min-width: 1025px)"
+                     srcset="./images/team/mark_guerrero-1x-desktop.jpg 1x, ./images/team/mark_guerrero-2x-desktop.jpg 2x">
+                 <img src="./images/team/mark_guerrero.jpg" 
+                   alt="Mark Guerrero" width="264" />
+               </picture>
                <div class="team-info">
                   <h3 class="team-item-title">Mark Guerrero</h3>
                   <p class="team-item-text">Product Designer</p>
@@ -273,7 +356,7 @@
 <!-- #endregion Team -->
 
 <!--#region Portfolio -->
-   <section class="portfolio">
+   <section class="portfolio hidden">
    <div class="container portfolio-container">
       <h2 class="portfolio-title">Our Portfolio</h2>
       <ul class="portfolio-list">
@@ -368,7 +451,7 @@
    </main> 
 
 <!--#region Footer -->
-<footer class="footer">
+<footer class="footer hidden">
     <div class="container footer-container">
         <div class="footer-info">
             <a class="logo-footer" href="./index.html">
@@ -431,7 +514,7 @@
 <!-- #endregion Footer -->
 
 <!-- #region backdrop -->
-<div class="backdrop">
+<div class="backdrop hidden">
    <div class="modal">
       <button class="close-btn" type="button">
          <svg class="close-btn-icon" width="8" height="8">
