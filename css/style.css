@@ -211,7 +211,7 @@ span.logo_style {
     }
 
     .header-nav-list {
-        flex-direction: row;
+        display: flex;
         align-items: center;
         gap: 40px;
     }
@@ -223,8 +223,9 @@ span.logo_style {
         letter-spacing: 0.02em;
     }
 }
+/* #endregion header */
 
-/* mobile menu */
+/* #region mobile menu */
 
 .mobile-menu {
     position: fixed;
@@ -314,7 +315,7 @@ span.logo_style {
     color: #4d5ae5;
 }
 
-/* Блок контактів */
+     /* Блок контактів */
 .mobile-menu-address {
     margin-top: auto;
 }
@@ -346,7 +347,7 @@ span.logo_style {
     color: #4d5ae5;
 }
 
-/* Соціальні мережі */
+    /* Соціальні мережі */
 .mobile-menu-social-list {
     display: flex;
     justify-content: center;
@@ -378,7 +379,7 @@ span.logo_style {
     fill: #fff;
 }
 
-/* Сховати меню на великих екранах */
+     /* Сховати меню на великих екранах */
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
@@ -391,6 +392,9 @@ span.logo_style {
     }
 }
 
+/* #endregion mobile menu */
+
+/* #region hero */
 /* Мобільна версія Hero */
 @media screen and (max-width: 767px) {
     .hero {
@@ -454,7 +458,7 @@ span.logo_style {
     }
 }
 
-/* Планшетна версія Hero */
+   /* Планшетна версія Hero */
 @media screen and (min-width: 768px) {
     .hero {
         padding: 140px 0;
@@ -517,7 +521,7 @@ span.logo_style {
             url(../images/hero/bg-tablet-2x.jpg);
     }
 }
- /* Комп'ютерна версія Hero */
+    /* Комп'ютерна версія Hero */
 @media screen and (min-width: 1158px) {
     .hero {
         margin: 0 auto;
@@ -570,6 +574,7 @@ span.logo_style {
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
+ /* #endregion hero */
 
 /* #region Features */
     .features {
@@ -659,21 +664,60 @@ span.logo_style {
 /* Комп'ютерна версія */
 @media screen and (min-width: 1158px) {
     .features {
-        padding: 120px 0;
+            background-color: #fff;
+            padding: 120px 0;
     }
 
     .features-container {
-        max-width: 1128px;
+        max-width: 1157px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 16px auto;
     }
-
+    
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        clip-path: inset(100%);
+        border: 0;
+        white-space: nowrap;
+    }
+    
     .features-list {
-        flex-wrap: nowrap;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         gap: 24px;
     }
-
-    .features-item {
-        width: calc((100% - 72px) / 4);
-    }
+    
+        .features-list-title {
+            width: calc((100% - 72px) / 4);
+        }
+    
+    
+        .features-item-title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            color: #2e2f42;
+            margin-bottom: 8px;
+        }
+    
+        .features-item-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #434455;
+        }
 }
 
 /* #endregion Features */
@@ -892,3 +936,8 @@ span.logo_style {
     }
 
 /* #endregion team */
+
+/* #region Portfolio */
+
+
+/* #endregion Portfolio */

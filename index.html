@@ -194,13 +194,13 @@
                <picture>
                   <!-- Мобільна версія -->
                   <source media="(max-width: 767px)"
-                     srcset="./images/team/ 1x, ./images/team/team-mobile-2x.jpg 2x">
+                     srcset="./images/team/mark_mobile.jpg 1x, ./images/team/mark_mobile_2x.jpg 2x">
                   <!-- Планшет -->
                   <source media="(min-width: 768px) and (max-width: 1024px)"
-                     srcset="./images/team/team-tablet.jpg 1x, ./images/team/team-tablet-2x.jpg 2x">
+                     srcset="./images/team/mark_tablet.jpg 1x, ./images/team/mark_tablet_2x.jpg 2x">
                   <!-- Десктоп -->
                   <source media="(min-width: 1025px)"
-                     srcset="./images/team/mark_guerrero.jpg 1x, ./images/team/team-desktop-2x.jpg 2x">
+                     srcset="./images/team/mark_guerrero.jpg 1x, ./images/team/mark_desktop_2x.jpg 2x">
                  <img src="./images/team/mark_guerrero.jpg" 
                    alt="Mark Guerrero" width="264" height="260"/>
                </picture>
@@ -243,13 +243,13 @@
                 <picture>
                      <!-- Мобільна версія -->
                      <source media="(max-width: 767px)"
-                     srcset="./images/team/team2-mobile.jpg  1x, ./images/team/team2-mobile-2x.jpg 2x">
+                     srcset="./images/team/tom_mobile.jpg  1x, ./images/team/tom_mobile_2x.jpg 2x">
                      <!-- Планшет -->
                      <source media="(min-width: 768px) and (max-width: 1024px)"
-                     srcset="./images/team/team2-tablet.jpg 1x,  2x">
+                     srcset="./images/team/tom_tablet.jpg 1x, ./images/team/tom_tablet_2x.jpg 2x">
                      <!-- Десктоп -->
                      <source media="(min-width: 1025px)" 
-                     srcset="./images/team/tom_ford.jpg 1x, ./images/team/team2-desktop-2x.jpg 2x">
+                     srcset="./images/team/tom_ford.jpg 1x, ./images/team/tom_desktop_2x.jpg 2x">
                      <img src="./images/team/tom_ford.jpg" 
                           alt="Tom Ford" width="264" height="260" />
                      </picture>
@@ -289,7 +289,19 @@
                </div>
             </li>
             <li class="team-list-title">
-               <img src="./images/team/camila_garcia.jpg" alt="Camila Garcia" width="264" height="260"/>
+               <picture>
+                  <!-- Мобільна версія -->
+                  <source media="(max-width: 767px)" 
+                  srcset="./images/team/camila_mobile.jpg  1x, ./images/team/camila_mobile_2x.jpg 2x">
+                  <!-- Планшет -->
+                  <source media="(min-width: 768px) and (max-width: 1024px)"
+                     srcset="./images/team/camila_tablet.jpg 1x, ./images/team/camila_tablet_2x.jpg 2x">
+                  <!-- Десктоп -->
+                  <source media="(min-width: 1025px)" 
+                  srcset="./images/team/camila_garcia.jpg 1x, ./images/team/camila_desktop_2x.jpg 2x">
+                  <img src="./images/team/camila_garcia.jpg" 
+                  alt="Camila Garcia" width="264" height="260" />
+               </picture>
                <div class="team-info">
                   <h3 class="team-item-title">Camila Garcia</h3>
                   <p class="team-item-text">Marketing</p>
@@ -326,7 +338,19 @@
                </div>
             </li>
             <li class="team-list-title">
-               <img src="./images/team/daniel_wilson.jpg" alt="Daniel Wilson" width="264" />
+               <picture>
+                  <!-- Мобільна версія -->
+                  <source media="(max-width: 767px)" 
+                  srcset="./images/team/daniel_mobile.jpg 1x, ./images/team/daniel_mobile_2x.jpg 2x"> 
+                  <!-- Планшет -->
+                  <source media="(min-width: 768px) and (max-width: 1024px)"
+                     srcset="./images/team/daniel_tablet.jpg 1x, ./images/team/daniel_tablet_2x.jpg 2x">
+                  <!-- Десктоп -->
+                  <source media="(min-width: 1025px)" 
+                  srcset="./images/team/daniel_wilson.jpg 1x, ./images/team/daniel_desktop_2x.jpg 2x">
+                   <img src="./images/team/daniel_wilson.jpg" 
+                   alt="Daniel Wilson" width="264" height="260"/>
+               </picture>
                <div class="team-info">
                   <h3 class="team-item-title">Daniel Wilson</h3>
                   <p class="team-item-text">UI Designer</p>
@@ -368,13 +392,31 @@
 <!-- #endregion Team -->
 
 <!--#region Portfolio -->
-   <section class="portfolio hidden">
+   <section class="portfolio">
    <div class="container portfolio-container">
       <h2 class="portfolio-title">Our Portfolio</h2>
       <ul class="portfolio-list">
          <li class="portfolio-list-title">
             <div class="portfolio-block">
-               <img src="./images/portfolio/banking_app.jpg" alt="Banking App" width="360" />
+               <picture>
+                  <!-- Мобільна версія -->
+                  <source media="(max-width: 767px)"
+                  srcset="
+                  ./images/portfolio/banking_app_mobile.jpg 1x,
+                  ./images/portfolio/banking_app_mobile_2x.jpg 2x" >
+                  <!-- Планшет -->
+                  <source media="(min-width: 768px) and (max-width: 1024px)"
+                  srcset="
+                  ./images/portfolio/banking_app_tablet.jpg 1x,
+                  ./images/portfolio/banking_app_tablet_2x.jpg 2x">
+                  <!-- Десктоп -->
+                  <source media="(min-width: 1025px)" 
+                  srcset="
+                  ./images/portfolio/banking_app.jpg 1x,
+                  ./images/portfolio/banking_app_desktop_2x.jpg 2x ">
+               <img src="./images/portfolio/banking_app.jpg" 
+               alt="Banking App" width="360" />
+               </picture>
                <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                   App · Cloud Storage App
@@ -388,7 +430,25 @@
 
          <li class="portfolio-list-title">
             <div class="portfolio-block">
-               <img src="./images/portfolio/cashlees.jpg" alt="Cashless Payment" width="360" />
+               <picture>
+                  <!-- Мобільна версія -->
+                  <source media="(max-width: 767px)" 
+                  srcset="
+                  ./images/portfolio/cashlees_mobile.jpg 1x,
+                  ./images/portfolio/cashlees_mobile_2x.jpg 2x">
+                  <!-- Планшет -->
+                  <source media="(min-width: 768px) and (max-width: 1024px)" 
+                  srcset="
+                  ./images/portfolio/cashless_tablet.jpg 1x,
+                  ./images/portfolio/cashlees_tablet_2x.jpg 2x">
+                  <!-- Десктоп -->
+                  <source media="(min-width: 1025px)" 
+                  srcset="
+                  ./images/portfolio/cashlees.jpg 1x,
+                  ./images/portfolio/cashlees_desktop_2x.jpg 2x ">
+               <img src="./images/portfolio/cashlees.jpg" 
+               alt="Cashless Payment" width="360" />
+               </picture>
                <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                   App · Cloud Storage App
@@ -402,7 +462,25 @@
 
          <li class="portfolio-list-title">
             <div class="portfolio-block">
-               <img src="./images/portfolio/meditation.jpg" alt="Meditation App" width="360" />
+               <picture>
+                  <!-- Мобільна версія -->
+                  <source media="(max-width: 767px)" 
+                  srcset="
+                 ./images/portfolio/meditation_mobile.jpg 1x,
+                  ./images/portfolio/meditation_mobile_2x.jpg 2x">
+                  <!-- Планшет -->
+                  <source media="(min-width: 768px) and (max-width: 1024px)" 
+                  srcset="
+                  ./images/portfolio/meditation_tablet.jpg 1x,
+                  ./images/portfolio/meditation_tablet_2x.jpg 2x">
+                  <!-- Десктоп -->
+                  <source media="(min-width: 1025px)" 
+                  srcset="
+                  ./images/portfolio/meditation.jpg 1x,
+                  ./images/portfolio/meditation_desktop_2x.jpg 2x ">
+               <img src="./images/portfolio/meditation.jpg" 
+               alt="Meditation App" width="360" />
+               </picture>
                <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                   App · Cloud Storage App
@@ -416,7 +494,25 @@
 
          <li class="portfolio-list-title">
             <div class="portfolio-block">
-               <img src="./images/portfolio/taxi_service.jpg" alt="Taxi Service" width="360" />
+               <picture>
+               <!-- Мобільна версія -->
+               <source media="(max-width: 767px)" 
+               srcset="
+               ./images/portfolio/taxi_service_mobile.jpg 1x,
+               ./images/portfolio/taxi_service_mobile_2x.jpg 2x">
+               <!-- Планшет -->
+               <source media="(min-width: 768px) and (max-width: 1024px)" 
+               srcset="
+               ./images/portfolio/taxi_service_tablet.jpg 1x,
+               ./images/portfolio/taxi_service_tablet_2x.jpg 2x">
+               <!-- Десктоп -->
+               <source media="(min-width: 1025px)" 
+               srcset="
+               ./images/portfolio/taxi_service.jpg 1x,
+               ./images/portfolio/taxi_service_desktop_2x.jpg 2x ">
+               <img src="./images/portfolio/taxi_service.jpg" 
+               alt="Taxi Service" width="360" />
+               </picture>
                <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                   App · Cloud Storage App
@@ -430,7 +526,25 @@
 
          <li class="portfolio-list-title">
             <div class="portfolio-block">
-               <img src="./images/portfolio/screen.jpg" alt="Screen Illustrations" width="360" />
+               <picture>
+               <!-- Мобільна версія -->
+               <source media="(max-width: 767px)" 
+               srcset="
+               ./images/portfolio/screen_mobile.jpg 1x,
+               ./images/portfolio/screen_mobile_2x.jpg 2x">
+               <!-- Планшет -->
+               <source media="(min-width: 768px) and (max-width: 1024px)" 
+               srcset="
+               ./images/portfolio/screen_tablet.jpg 1x,
+               ./images/portfolio/screen_tablet_2x.jpg 2x">
+               <!-- Десктоп -->
+               <source media="(min-width: 1025px)" 
+               srcset="
+               ./images/portfolio/screen.jpg 1x,
+               ./images/portfolio/screen_desktop_2x.jpg 2x ">
+               <img src="./images/portfolio/screen.jpg" 
+               alt="Screen Illustrations" width="360" />
+               </picture>
                <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                   App · Cloud Storage App
@@ -444,7 +558,26 @@
 
          <li class="portfolio-list-title">
             <div class="portfolio-block">
-               <img src="./images/portfolio/online_courses.jpg" alt="Online Courses" width="360" />
+               <picture>
+                  <!-- Мобільна версія -->
+                  <source media="(max-width: 767px)" 
+                  srcset="
+                  ./images/portfolio/online_courses_mobile.jpg 1x,
+                  ./images/portfolio/online_courses_mobile_2x.jpg 2x">
+                  <!-- Планшет -->
+                  <source media="(min-width: 768px) and (max-width: 1024px)" 
+                  srcset="
+                  ./images/portfolio/online_courses_tablet.jpg 1x,
+                  ./images/portfolio/online_courses_tablet_2x.jpg 2x">
+                  <!-- Десктоп -->
+                  <source media="(min-width: 1025px)" 
+                  srcset="
+                  ./images/portfolio/online_courses.jpg 1x,
+                  ./images/portfolio/online_courses_desktop_2x.jpg 2x ">
+               
+                 <img src="./images/portfolio/online_courses.jpg" 
+                  alt="Online Courses" width="360" />
+               </picture>
                <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                   App · Cloud Storage App
