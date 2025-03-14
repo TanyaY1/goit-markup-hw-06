@@ -59,22 +59,23 @@
                   <use href="./images/icons.svg#icon-btn-close"></use>
                </svg>
             </button>
-            <ul class="mobile-menu-nav-list">
-               <li class="mobile-menu-nav-iten">
-                  <a class="mobile-menu-nav-link current" href="./index.html">Studio</a>
-            </li>
-            <li class="mobile-menu-nav-iten">
-               <a class="mobile-menu-nav-link" href="">Portfolio</a>
-            </li>
-            <li class="mobile-menu-nav-iten">
-               <a class="mobile-menu-nav-link" href="">Contacts</a>
-            </li>
-         </ul>
-
+            <nav class="mobile-menu-nav">
+               <ul class="mobile-menu-list">
+                 <li class="mobile-menu-nav-iten">
+                     <a class="mobile-menu-nav-link current" href="./index.html">Studio</a>
+                </li>
+                 <li class="mobile-menu-nav-iten">
+                     <a class="mobile-menu-nav-link" href="">Portfolio</a>
+                </li>
+                  <li class="mobile-menu-nav-iten">
+                     <a class="mobile-menu-nav-link" href="">Contacts</a>
+                </li>
+               </ul>
+            </nav>
          <address class="mobile-menu-address">
             <ul class="mobile-menu-address-list">
                <li class="mobile-menu-addres-item">
-                  <a class="mobile-menu-address-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  <a class="mobile-menu-address-item-link current" href="mailto:info@devstudio.com">info@devstudio.com</a>
                </li>
                <li class="mobile-menu-addres-item">
                   <a class="mobile-menu-address-item-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
@@ -192,17 +193,21 @@
          <ul class="team-list">
             <li class="team-list-title">
                <picture>
+                  <!-- Десктоп -->
+                  <source media="(min-width: 1158px)" 
+                  srcset="./images/team/mark_guerrero.jpg 1x, ./images/team/mark_desktop_2x.jpg 2x">
+             
+                  <!-- Планшет -->
+                  <source media="(min-width: 768px) and (max-width: 1157px)"
+                     srcset="./images/team/mark_tablet.jpg 1x, ./images/team/mark_tablet_2x.jpg 2x">
+                  
                   <!-- Мобільна версія -->
                   <source media="(max-width: 767px)"
-                     srcset="./images/team/mark_mobile.jpg 1x, ./images/team/mark_mobile_2x.jpg 2x">
-                  <!-- Планшет -->
-                  <source media="(min-width: 768px) and (max-width: 1024px)"
-                     srcset="./images/team/mark_tablet.jpg 1x, ./images/team/mark_tablet_2x.jpg 2x">
-                  <!-- Десктоп -->
-                  <source media="(min-width: 1025px)"
-                     srcset="./images/team/mark_guerrero.jpg 1x, ./images/team/mark_desktop_2x.jpg 2x">
+                  srcset="./images/team/mark_mobile.jpg 1x, ./images/team/mark_mobile_2x.jpg 2x">
+
                  <img src="./images/team/mark_guerrero.jpg" 
                    alt="Mark Guerrero" width="264" height="260"/>
+
                </picture>
                <div class="team-info">
                   <h3 class="team-item-title">Mark Guerrero</h3>
@@ -241,15 +246,19 @@
             </li>
             <li class="team-list-title">
                 <picture>
-                     <!-- Мобільна версія -->
-                     <source media="(max-width: 767px)"
-                     srcset="./images/team/tom_mobile.jpg  1x, ./images/team/tom_mobile_2x.jpg 2x">
-                     <!-- Планшет -->
-                     <source media="(min-width: 768px) and (max-width: 1024px)"
-                     srcset="./images/team/tom_tablet.jpg 1x, ./images/team/tom_tablet_2x.jpg 2x">
+
                      <!-- Десктоп -->
-                     <source media="(min-width: 1025px)" 
+                     <source media="(min-width: 1158px)" 
                      srcset="./images/team/tom_ford.jpg 1x, ./images/team/tom_desktop_2x.jpg 2x">
+                     
+                     <!-- Планшет -->
+                     <source media="(min-width: 768px) and (max-width: 1157px)"
+                     srcset="./images/team/tom_tablet.jpg 1x, ./images/team/tom_tablet_2x.jpg 2x">
+
+                     <!-- Мобільна версія -->
+                     <source media="(max-width: 767px)" 
+                     srcset="./images/team/tom_mobile.jpg  1x, ./images/team/tom_mobile_2x.jpg 2x">
+                     
                      <img src="./images/team/tom_ford.jpg" 
                           alt="Tom Ford" width="264" height="260" />
                      </picture>
@@ -290,16 +299,20 @@
             </li>
             <li class="team-list-title">
                <picture>
-                  <!-- Мобільна версія -->
-                  <source media="(max-width: 767px)" 
-                  srcset="./images/team/camila_mobile.jpg  1x, ./images/team/camila_mobile_2x.jpg 2x">
-                  <!-- Планшет -->
-                  <source media="(min-width: 768px) and (max-width: 1024px)"
-                     srcset="./images/team/camila_tablet.jpg 1x, ./images/team/camila_tablet_2x.jpg 2x">
+
                   <!-- Десктоп -->
-                  <source media="(min-width: 1025px)" 
+                  <source media="(min-width: 1158px)" 
                   srcset="./images/team/camila_garcia.jpg 1x, ./images/team/camila_desktop_2x.jpg 2x">
-                  <img src="./images/team/camila_garcia.jpg" 
+                  
+                  <!-- Планшет -->
+                  <source media="(min-width: 768px) and (max-width: 1157px)"
+                     srcset="./images/team/camila_tablet.jpg 1x, ./images/team/camila_tablet_2x.jpg 2x">
+
+                     <!-- Мобільна версія -->
+                     <source media="(max-width: 767px)" 
+                     srcset="./images/team/camila_mobile.jpg  1x, ./images/team/camila_mobile_2x.jpg 2x">
+                  
+                     <img src="./images/team/camila_garcia.jpg" 
                   alt="Camila Garcia" width="264" height="260" />
                </picture>
                <div class="team-info">
@@ -339,15 +352,19 @@
             </li>
             <li class="team-list-title">
                <picture>
-                  <!-- Мобільна версія -->
-                  <source media="(max-width: 767px)" 
-                  srcset="./images/team/daniel_mobile.jpg 1x, ./images/team/daniel_mobile_2x.jpg 2x"> 
-                  <!-- Планшет -->
-                  <source media="(min-width: 768px) and (max-width: 1024px)"
-                     srcset="./images/team/daniel_tablet.jpg 1x, ./images/team/daniel_tablet_2x.jpg 2x">
+
                   <!-- Десктоп -->
-                  <source media="(min-width: 1025px)" 
+                  <source media="(min-width: 1158px)" 
                   srcset="./images/team/daniel_wilson.jpg 1x, ./images/team/daniel_desktop_2x.jpg 2x">
+                  
+                  <!-- Планшет -->
+                  <source media="(min-width: 768px) and (max-width: 1157px)"
+                     srcset="./images/team/daniel_tablet.jpg 1x, ./images/team/daniel_tablet_2x.jpg 2x">
+
+                     <!-- Мобільна версія -->
+                     <source media="(max-width: 767px)" 
+                     srcset="./images/team/daniel_mobile.jpg 1x, ./images/team/daniel_mobile_2x.jpg 2x">
+                 
                    <img src="./images/team/daniel_wilson.jpg" 
                    alt="Daniel Wilson" width="264" height="260"/>
                </picture>
@@ -399,21 +416,23 @@
          <li class="portfolio-list-title">
             <div class="portfolio-block">
                <picture>
-                  <!-- Мобільна версія -->
-                  <source media="(max-width: 767px)"
-                  srcset="
-                  ./images/portfolio/banking_app_mobile.jpg 1x,
-                  ./images/portfolio/banking_app_mobile_2x.jpg 2x" >
+
+                  <!-- Десктоп -->
+                  <source media="(min-width: 1158px)" srcset="
+                  ./images/portfolio/banking_app.jpg 1x,
+                  ./images/portfolio/banking_app_desktop_2x.jpg 2x ">
+
                   <!-- Планшет -->
-                  <source media="(min-width: 768px) and (max-width: 1024px)"
+                  <source media="(min-width: 768px) and (max-width: 1157px)"
                   srcset="
                   ./images/portfolio/banking_app_tablet.jpg 1x,
                   ./images/portfolio/banking_app_tablet_2x.jpg 2x">
-                  <!-- Десктоп -->
-                  <source media="(min-width: 1025px)" 
-                  srcset="
-                  ./images/portfolio/banking_app.jpg 1x,
-                  ./images/portfolio/banking_app_desktop_2x.jpg 2x ">
+
+                  <!-- Мобільна версія -->
+                  <source media="(max-width: 767px)" srcset="
+                  ./images/portfolio/banking_app_mobile.jpg 1x,
+                  ./images/portfolio/banking_app_mobile_2x.jpg 2x">
+                  
                <img src="./images/portfolio/banking_app.jpg" 
                alt="Banking App" width="360" />
                </picture>
@@ -431,21 +450,23 @@
          <li class="portfolio-list-title">
             <div class="portfolio-block">
                <picture>
-                  <!-- Мобільна версія -->
-                  <source media="(max-width: 767px)" 
-                  srcset="
-                  ./images/portfolio/cashlees_mobile.jpg 1x,
-                  ./images/portfolio/cashlees_mobile_2x.jpg 2x">
-                  <!-- Планшет -->
-                  <source media="(min-width: 768px) and (max-width: 1024px)" 
-                  srcset="
-                  ./images/portfolio/cashless_tablet.jpg 1x,
-                  ./images/portfolio/cashlees_tablet_2x.jpg 2x">
+
                   <!-- Десктоп -->
-                  <source media="(min-width: 1025px)" 
-                  srcset="
+                  <source media="(min-width: 1158px)" srcset="
                   ./images/portfolio/cashlees.jpg 1x,
                   ./images/portfolio/cashlees_desktop_2x.jpg 2x ">
+                  
+                  <!-- Планшет -->
+                  <source media="(min-width: 768px) and (max-width: 1157px)" 
+                  srcset="
+                  ./images/portfolio/cashless_tablet.jpg 1x,
+                  ./images/portfolio/cashless_tablet_2x.jpg 2x">
+
+                  <!-- Мобільна версія -->
+                  <source media="(max-width: 767px)" srcset="
+                  ./images/portfolio/cashlees_mobile.jpg 1x,
+                  ./images/portfolio/cashlees_mobile_2x.jpg 2x">
+               
                <img src="./images/portfolio/cashlees.jpg" 
                alt="Cashless Payment" width="360" />
                </picture>
@@ -463,21 +484,23 @@
          <li class="portfolio-list-title">
             <div class="portfolio-block">
                <picture>
-                  <!-- Мобільна версія -->
-                  <source media="(max-width: 767px)" 
-                  srcset="
-                 ./images/portfolio/meditation_mobile.jpg 1x,
-                  ./images/portfolio/meditation_mobile_2x.jpg 2x">
+
+                  <!-- Десктоп -->
+                  <source media="(min-width: 1158px)" srcset="
+                  ./images/portfolio/meditation.jpg 1x,
+                  ./images/portfolio/meditation_desktop_2x.jpg 2x ">
+                 
                   <!-- Планшет -->
-                  <source media="(min-width: 768px) and (max-width: 1024px)" 
+                  <source media="(min-width: 768px) and (max-width: 1157px)" 
                   srcset="
                   ./images/portfolio/meditation_tablet.jpg 1x,
                   ./images/portfolio/meditation_tablet_2x.jpg 2x">
-                  <!-- Десктоп -->
-                  <source media="(min-width: 1025px)" 
-                  srcset="
-                  ./images/portfolio/meditation.jpg 1x,
-                  ./images/portfolio/meditation_desktop_2x.jpg 2x ">
+
+                  <!-- Мобільна версія -->
+                  <source media="(max-width: 767px)" srcset="
+                   ./images/portfolio/meditation_mobile.jpg 1x,
+                  ./images/portfolio/meditation_mobile_2x.jpg 2x">
+                  
                <img src="./images/portfolio/meditation.jpg" 
                alt="Meditation App" width="360" />
                </picture>
@@ -495,21 +518,24 @@
          <li class="portfolio-list-title">
             <div class="portfolio-block">
                <picture>
-               <!-- Мобільна версія -->
-               <source media="(max-width: 767px)" 
-               srcset="
-               ./images/portfolio/taxi_service_mobile.jpg 1x,
-               ./images/portfolio/taxi_service_mobile_2x.jpg 2x">
+
+               <!-- Десктоп -->
+               <source media="(min-width: 1158px)" srcset="
+               ./images/portfolio/taxi_service.jpg 1x,
+               ./images/portfolio/taxi_service_desktop_2x.jpg 2x ">
+               
                <!-- Планшет -->
-               <source media="(min-width: 768px) and (max-width: 1024px)" 
+               <source media="(min-width: 768px) and (max-width: 1157px)" 
                srcset="
                ./images/portfolio/taxi_service_tablet.jpg 1x,
                ./images/portfolio/taxi_service_tablet_2x.jpg 2x">
-               <!-- Десктоп -->
-               <source media="(min-width: 1025px)" 
-               srcset="
-               ./images/portfolio/taxi_service.jpg 1x,
-               ./images/portfolio/taxi_service_desktop_2x.jpg 2x ">
+
+               <!-- Мобільна версія -->
+               <source media="(max-width: 767px)" srcset="
+               ./images/portfolio/taxi_service_mobile.jpg 1x,
+               ./images/portfolio/taxi_service_mobile_2x.jpg 2x">
+
+               
                <img src="./images/portfolio/taxi_service.jpg" 
                alt="Taxi Service" width="360" />
                </picture>
@@ -527,21 +553,24 @@
          <li class="portfolio-list-title">
             <div class="portfolio-block">
                <picture>
-               <!-- Мобільна версія -->
-               <source media="(max-width: 767px)" 
-               srcset="
-               ./images/portfolio/screen_mobile.jpg 1x,
-               ./images/portfolio/screen_mobile_2x.jpg 2x">
+
+               <!-- Десктоп -->
+               <source media="(min-width: 1158px)" srcset="
+               ./images/portfolio/screen.jpg 1x,
+               ./images/portfolio/screen_desktop_2x.jpg 2x ">
+               
                <!-- Планшет -->
-               <source media="(min-width: 768px) and (max-width: 1024px)" 
+               <source media="(min-width: 768px) and (max-width: 1157px)" 
                srcset="
                ./images/portfolio/screen_tablet.jpg 1x,
                ./images/portfolio/screen_tablet_2x.jpg 2x">
-               <!-- Десктоп -->
-               <source media="(min-width: 1025px)" 
-               srcset="
-               ./images/portfolio/screen.jpg 1x,
-               ./images/portfolio/screen_desktop_2x.jpg 2x ">
+
+              <!-- Мобільна версія -->
+              <source media="(max-width: 767px)" srcset="
+               ./images/portfolio/screen_mobile.jpg 1x,
+               ./images/portfolio/screen_mobile_2x.jpg 2x">
+
+               
                <img src="./images/portfolio/screen.jpg" 
                alt="Screen Illustrations" width="360" />
                </picture>
@@ -559,21 +588,24 @@
          <li class="portfolio-list-title">
             <div class="portfolio-block">
                <picture>
-                  <!-- Мобільна версія -->
-                  <source media="(max-width: 767px)" 
-                  srcset="
-                  ./images/portfolio/online_courses_mobile.jpg 1x,
-                  ./images/portfolio/online_courses_mobile_2x.jpg 2x">
+
+                  <!-- Десктоп -->
+                  <source media="(min-width: 1158px)" srcset="
+                  ./images/portfolio/online_courses.jpg 1x,
+                  ./images/portfolio/online_courses_desktop_2x.jpg 2x ">
+               
                   <!-- Планшет -->
-                  <source media="(min-width: 768px) and (max-width: 1024px)" 
+                  <source media="(min-width: 768px) and (max-width: 1157px)" 
                   srcset="
                   ./images/portfolio/online_courses_tablet.jpg 1x,
                   ./images/portfolio/online_courses_tablet_2x.jpg 2x">
-                  <!-- Десктоп -->
-                  <source media="(min-width: 1025px)" 
-                  srcset="
-                  ./images/portfolio/online_courses.jpg 1x,
-                  ./images/portfolio/online_courses_desktop_2x.jpg 2x ">
+
+                 <!-- Мобільна версія -->
+                <source media="(max-width: 767px)" srcset="
+                     ./images/portfolio/online_courses_mobile.jpg 1x,
+                     ./images/portfolio/online_courses_mobile_2x.jpg 2x">
+
+                  
                
                  <img src="./images/portfolio/online_courses.jpg" 
                   alt="Online Courses" width="360" />
@@ -596,7 +628,7 @@
    </main> 
 
 <!--#region Footer -->
-<footer class="footer hidden">
+<footer class="footer">
     <div class="container footer-container">
         <div class="footer-info">
             <a class="logo-footer" href="./index.html">
@@ -659,7 +691,7 @@
 <!-- #endregion Footer -->
 
 <!-- #region backdrop -->
-<div class="backdrop hidden">
+<div class="backdrop">
    <div class="modal">
       <button class="close-btn" type="button">
          <svg class="close-btn-icon" width="8" height="8">
