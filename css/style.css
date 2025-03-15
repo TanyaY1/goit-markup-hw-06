@@ -410,14 +410,6 @@ button {
     background-position: center;
 }
 
-@media screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            
-    }
-}
-
 .hero-title {
     text-align: justify;
     font-weight: 700;
