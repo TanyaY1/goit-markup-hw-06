@@ -401,7 +401,10 @@ button {
     max-width: none;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url("../images/hero/bg_mobile.jpg") 1x;
+            image-set(
+            url("../images/hero/bg_mobile.jpg") 1x,
+            url("../images/hero/bg_mobile@2x.jpg") 2x
+            );
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -411,7 +414,7 @@ button {
 screen and (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url("../images/hero/bg_mobile@2x.jpg");
+            
     }
 }
 
@@ -603,7 +606,7 @@ screen and (min-resolution: 2dppx) {
         line-height: 1.11;
         letter-spacing: 0.02em;
         color: #2e2f42;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
     }
 
     .features-item-text {
@@ -615,12 +618,14 @@ screen and (min-resolution: 2dppx) {
     }
 
     .features-list {
-        column-gap: 24px;
-        row-gap: 72px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 48px;
+        row-gap: 16px;
     }
 
     .features-list-title {
-        width: calc((100% - 24px) / 2);
+        width: calc((100% - 48px) / 2);
     }
 }
 
@@ -642,8 +647,12 @@ screen and (min-resolution: 2dppx) {
     .features-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-         gap: 72px 24px;
+        gap: 72px 24px;
     }
+
+    .features-list-title {
+        width: 100%;
+        }
 } 
 
 @media screen and (min-width: 1158px) {
